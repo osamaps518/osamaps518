@@ -34,7 +34,7 @@ I build backend systems in Python: APIs, data models, and the tests and pipeline
 
 ### [Souq Al-Balad](https://github.com/osamaps518/souq_al_balad) · سوق البلد
 
-A peer-to-peer marketplace for the local Palestinian community. My graduation project, built solo. The interface is Arabic, right-to-left and mobile-first.
+A peer-to-peer marketplace for the local Palestinian community. My graduation project. The interface is Arabic, right-to-left and mobile-first.
 
 - A FastAPI modular monolith with modules for listings, messaging, sale coordination, reputation and admin moderation, plus the full React/TypeScript frontend.
 - Hybrid keyword and semantic search for Arabic listings (Meilisearch with Gemini embeddings), and real-time messaging and notifications over Socket.IO.
