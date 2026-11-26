@@ -25,7 +25,7 @@ I build backend systems in Python: APIs, data models, and the tests and pipeline
 
 | PR | What changed |
 | --- | --- |
-| [#856](https://github.com/litestar-org/advanced-alchemy/pull/856) | **OpenTelemetry support.**Found why OpenTelemetry's SQLAlchemy instrumentation silently missed the library's engines (engine factories were bound at import time, before the instrumentor patched them) and fixed it by resolving factories at call time across sync, async and read-replica routing configs; wrote the integration docs (#856) |
+| [#856](https://github.com/litestar-org/advanced-alchemy/pull/856) | **OpenTelemetry support.** Found why OpenTelemetry's SQLAlchemy instrumentation silently missed the library's engines (engine factories were bound at import time, before the instrumentor patched them) and fixed it by resolving factories at call time across sync, async and read-replica routing configs; wrote the integration docs (#856) |
 | [#839](https://github.com/litestar-org/advanced-alchemy/pull/839), [#840](https://github.com/litestar-org/advanced-alchemy/pull/840) | **Oracle & SQL Server errors.** Classified constraint violations into `DuplicateKeyError` and `ForeignKeyError` instead of generic `IntegrityError`, tested against Oracle 23ai and SQL Server 2022. |
 | [#869](https://github.com/litestar-org/advanced-alchemy/pull/869) | **Litestar query services.** Fixed service providers failing requests for query and async read services, with typed overloads. |
 | [#865](https://github.com/litestar-org/advanced-alchemy/pull/865) | **Cache protocols.** Exported cache-region protocols on the public API. |
