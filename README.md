@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://osamazuhdi.com"><img alt="Website" src="https://img.shields.io/badge/osamazuhdi.com-111827?style=flat-square&logo=googlechrome&logoColor=white"></a>
-  <a href="https://linkedin.com/in/osama-zuhdi"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://linkedin.com/in/osama-zuhdi"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-111827?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="mailto:osamaps5181346@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-111827?style=flat-square&logo=gmail&logoColor=white"></a>
   <a href="https://osamazuhdi.com/osama-quttenh-cv.pdf"><img alt="CV" src="https://img.shields.io/badge/CV-PDF-111827?style=flat-square&logo=readthedocs&logoColor=white"></a>
 </p>
