@@ -19,48 +19,23 @@ I build backend systems in Python: APIs, data models, and the tests and pipeline
 
 **Open to backend engineering roles.**
 
-## Open source
+## Open Source
 
 **[Advanced Alchemy](https://github.com/litestar-org/advanced-alchemy)** · 5 merged pull requests
 
 | PR | What changed |
 | --- | --- |
-| [#856](https://github.com/litestar-org/advanced-alchemy/pull/856) | **OpenTelemetry support.** Found why OpenTelemetry's SQLAlchemy instrumentation silently missed the library's engines (engine factories were bound at import time, before the instrumentor patched them). Resolved them at call time across sync, async and read-replica configs, and wrote the integration docs. |
-| [#839](https://github.com/litestar-org/advanced-alchemy/pull/839), [#840](https://github.com/litestar-org/advanced-alchemy/pull/840) | **Specific errors on Oracle and SQL Server.** Constraint violations now raise `DuplicateKeyError` and `ForeignKeyError` instead of a generic `IntegrityError`, tested against real Oracle 23ai and SQL Server 2022. |
-| [#869](https://github.com/litestar-org/advanced-alchemy/pull/869) | **Litestar query services.** Fixed service providers that failed every request for query and async read services, with typed overloads. |
-| [#865](https://github.com/litestar-org/advanced-alchemy/pull/865) | **Cache protocols.** Exported the cache-region protocols on the public API. |
+| [#856](https://github.com/litestar-org/advanced-alchemy/pull/856) | **OpenTelemetry support.** Fixed silent instrumentation misses caused by import-time engine factory binding by resolving factories at call time across sync, async, and read-replica configs; wrote integration docs. |
+| [#839](https://github.com/litestar-org/advanced-alchemy/pull/839), [#840](https://github.com/litestar-org/advanced-alchemy/pull/840) | **Oracle & SQL Server errors.** Classified constraint violations into `DuplicateKeyError` and `ForeignKeyError` instead of generic `IntegrityError`, tested against Oracle 23ai and SQL Server 2022. |
+| [#869](https://github.com/litestar-org/advanced-alchemy/pull/869) | **Litestar query services.** Fixed service providers failing requests for query and async read services, with typed overloads. |
+| [#865](https://github.com/litestar-org/advanced-alchemy/pull/865) | **Cache protocols.** Exported cache-region protocols on the public API. |
 
 ## Projects
 
-### [Souq Al-Balad](https://github.com/osamaps518/souq_al_balad) · سوق البلد
+* **[Mutabiq](https://github.com/osamaps518/Mutabiq) · مطابق** `in progress` — Arabic search for PostgreSQL: normalizes spelling variants in Python and SQL with parity tests, adds regional alias packs (بندورة / طماطم), and ships `doctor` and `bench` CLIs.
+* **[GHBot](https://github.com/osamaps518/GHBot)** `in progress` — Arabic-first training and nutrition tracker with a modular FastAPI backend and Flutter Android client; will be Mutabiq's first real consumer for Arabic food search.
+* **[Souq Al-Balad](https://github.com/osamaps518/souq_al_balad) · سوق البلد** — Peer-to-peer Arabic marketplace (graduation project): FastAPI modular monolith, React/TypeScript frontend, Meilisearch + Gemini hybrid search, Socket.IO chat, AI listing assistant, Azure/Docker, and 1,000+ automated tests in CI.
 
-A peer-to-peer marketplace for the local Palestinian community. My graduation project. The interface is Arabic, right-to-left and mobile-first.
+## Core Stack
 
-- A FastAPI modular monolith with modules for listings, messaging, sale coordination, reputation and admin moderation, plus the full React/TypeScript frontend.
-- Hybrid keyword and semantic search for Arabic listings (Meilisearch with Gemini embeddings), and real-time messaging and notifications over Socket.IO.
-- An AI listing assistant that suggests a category, drafts an Arabic description and flags prohibited items from product photos.
-- Deployed as Docker containers on Azure App Service, with Supabase for auth, storage and PostgreSQL. GitHub Actions runs 1,000+ tests (Pytest, Vitest, Playwright) and Alembic drift checks, then deploys to staging.
-
-<sub>FastAPI · SQLAlchemy · PostgreSQL · React · TypeScript · Meilisearch · Socket.IO · Docker · Azure · Supabase</sub>
-
-### [Mutabiq](https://github.com/osamaps518/Mutabiq) · مطابق <sub>`in progress`</sub>
-
-A library that makes Arabic search work in your own PostgreSQL database. The same Arabic word gets written many ways (أرز, إرز, آرز, ارز), so Mutabiq turns them into one form, with the rules implemented in both Python and SQL and tested to give the same output. It adds alias packs for words that differ by region (بندورة and طماطم), a `doctor` command that checks a database, and a `bench` command that measures search quality on labelled queries.
-
-<sub>Python · PostgreSQL · uv · Pytest</sub>
-
-### [GHBot](https://github.com/osamaps518/GHBot) <sub>`in progress`</sub>
-
-An Arabic-first training and nutrition app for people who train: food logging with daily totals, synced to the server. A FastAPI backend split into modules with a Flutter Android app that mirrors them. It will be Mutabiq's first user, for Arabic food search.
-
-<sub>FastAPI · SQLAlchemy · PostgreSQL · Flutter · Dart</sub>
-
-## Tech
-
-<p>
-  <img alt="Python, FastAPI, Django, PostgreSQL, TypeScript, React, Docker, Azure, GitHub Actions, Linux, Bash, Git" src="https://skillicons.dev/icons?i=py,fastapi,django,postgres,ts,react,docker,azure,githubactions,linux,bash,git&perline=12">
-</p>
-
-Also: SQLAlchemy · Alembic · Django REST Framework · Pytest · Vitest · Playwright · Java · SQL
-
-</details>
+`Python` · `FastAPI` · `SQLAlchemy` · `PostgreSQL` · `Django / DRF` · `Pytest` · `Docker` · `GitHub Actions` · `Linux`
