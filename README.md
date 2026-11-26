@@ -63,14 +63,4 @@ An Arabic-first training and nutrition app for people who train: food logging wi
 
 Also: SQLAlchemy · Alembic · Django REST Framework · Pytest · Vitest · Playwright · Java · SQL
 
-<details>
-<summary><b>Earlier work</b> (university projects)</summary>
-<br>
-
-- [Al-Haris](https://github.com/osamaps518/Al-Haris): parental controls with server-side content filtering and URL blocking; a FastAPI backend, a parent client and an Android client
-- [Huffman](https://github.com/osamaps518/huffman): file compression with Huffman coding (Java)
-- [Steg_Hide_Random](https://github.com/osamaps518/Steg_Hide_Random): hides a secret message inside an image (Java)
-- [Decision_Tree_Implementation](https://github.com/osamaps518/Decision_Tree_Implementation): a decision tree model from scratch (Java)
-- [shortest_path_dp](https://github.com/osamaps518/shortest_path_dp): cheapest route between cities with dynamic programming (Java)
-
 </details>
